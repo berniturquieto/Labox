@@ -16,7 +16,7 @@ INICIO:
 	LDI r16, LOW(RAMEND)
 	OUT SPl, r16
 	
-	call USART_Init			;Función que inicializa los registros para USART
+	call USART_Init			;FunciÃ³n que inicializa los registros para USART
 
 aca:
 
@@ -61,7 +61,7 @@ check_transmit_buffer_empty:
 	rjmp check_transmit_buffer_empty
 
 	; Put data (r16) into buffer, sends the data
-	sts UDR0,r16	;Dato cargado antes de la función
+	sts UDR0,r16	;Dato cargado antes de la funciÃ³n
 
 	pop r17
 	RET
