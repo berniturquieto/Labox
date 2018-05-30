@@ -27,7 +27,7 @@
 
 main:
 
-	sbi DDRB,6 ; Pongo como salida el pin OC1B por donde va a salir la señal del PWM
+	sbi DDRB,6 ; Pongo como salida el pin OC1B por donde va a salir la seÃ±al del PWM
 	call configure_pwm
 LOOP:
 	call delay_1s
